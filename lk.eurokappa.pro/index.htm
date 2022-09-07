@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Личный кабинет Еврокаппа">
+<script type="text/javascript" data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);</script>
+
+
+<link href="bitrix\cache\css\s1\eurocappa\template_788cfcee8136ee325e44b7df19c57e88\template_788cfcee8136ee325e44b7df19c57e88_v1.css?1662460225961448" type="text/css" data-template-style="true" rel="stylesheet">
+
+
+
+
+
+
+
+    <title>Авторизация</title>
+    </head>
+<body class=" main-page auth-page " style="background-color:white;">
+        <div id="app-container" data-app="">
+        <app-overlay :z-index="19999"></app-overlay>
+                <div class="content">
+<auth-reg inline-template="">
+    <div class="auth-block">
+        <div class="auth-block-head">
+            <a class="logo" href="index.htm"></a>
+        </div>
+        <div class="auth-block-body">
+            <template v-if="mode == 'auth'">
+                
+<div class="auth-form-container">
+    <div class="title">{{ $t('VHOD') }}</div>
+            <form id="auth-form" name="form_auth" method="post" target="_top" action="/?login=yes">
+        <input type="hidden" name="form_id" value="auth_form">
+        <input type="hidden" name="AUTH_FORM" value="Y">
+        <input type="hidden" name="TYPE" value="AUTH">
+                <input type="hidden" name="backurl" value="/">
+                        <input type="hidden" name="AUTH_FORM" value="Y">
+        <input type="hidden" name="TYPE" value="AUTH">
+
+        <div class="form-content">
+            <div class="form-item form-item">
+                <label for="USER_LOGIN">{{ $t('LOGIN') }}</label>
+                <input id="USER_LOGIN" name="USER_LOGIN" title="email" type="text" value="">
+            </div>
+            <div class="form-item form-item">
+                <label for="USER_PASSWORD">{{ $t('PAROL') }}</label>
+                <input id="USER_PASSWORD" name="USER_PASSWORD" title="password" type="password" placeholder="">
+            </div>
+            <!-- <div class="check-y">
+                <br>
+                <a href="/?forgot_password=yes">
+                    <div style="text-align: right; color: #167ed4; text-decoration: underline"> Восстановить&nbsp;пароль</div>
+                </a>
+                <br>
+            </div> -->
+        </div>
+        <div class="form-submit">
+            <input class="btn btn-default btn--inverse btn--shadow b-rad-mid" name="Login" title="enter" type="submit" :value="$t('VOYTI')">
+        </div>
+    </form>
+
+</div>
+            </template>
+            <template v-if="mode == 'reg'">
+                <register inline-template="" :errors-list="[]">
+	<div class="register-form-container">
+		<div v-if="step == 'reg-completed'" class="reg-accepted-message">
+			<div class="message-title">
+				{{ $t('SPASIBO_ZA_REGISTRATSIYU') }}
+			</div>
+			<div class="message-text">
+				<!-- Сотрудники Еврокаппа свяжутся с Вами -->
+			</div>
+			<div class="controls">
+				<a class="btn btn--default btn--shadow b-rad-mid" href="index.htm">{{ $t('NA_GLAVNUYU') }}</a>
+			</div>
+		</div>
+		<div v-if="registrationAccepted" class="reg-accepted-message">
+			<div class="message-title">
+				{{ $t('SPASIBO') }}
+			</div>
+			<div class="message-text">
+				{{ $t('SOTRUDNIKI_EVROKAPPA_SVYAZHUTSYA_S_VAMI') }}
+			</div>
+			<div class="controls">
+				<a class="btn btn--default btn--shadow b-rad-mid" href="index.htm">{{ $t('NA_GLAVNUYU') }}</a>
+			</div>
+		</div>
+		<template v-else="">
+		<div v-if="step == 1" class="title">{{ $t('REGISTRATSIYA') }}</div>
+		<div v-else-if="step == 2" class="title">{{ $t('SPETSIALIZATSIYA_I_KONTAKTY') }}</div>
+		<div v-else-if="step == 'check-phone'" class="title title--phone-checker">{{ $t('KOD_PODTVERZHDENIYA') }}</div>
+	    <div v-if="errors.common && errors.common.length" class="message-text">
+	        <span class="error" v-html="errors.common.join()"></span>
+	    </div>
+		<div class="register-form">
+		<form @submit="submit($event)" autocomplete="off" method="post" class="form" name="form1" action="" enctype="multipart/form-data">
+			<input type="hidden" name="form_id" value="registration_form">
+			<input type="hidden" name="REGISTER[LOGIN]" value="">
+			<input type="hidden" name="UF_COMPANY_ID" :value="companyId">
+			<input type="hidden" name="UF_CLINIC[]" :value="companyId">
+
+            
+			
+			<template v-if="!registrationAccepted">
+				<div v-show="step == 'check-phone'">
+					<div class="form-content">
+						<phone-code-checker v-model="phoneCode" :phone="phone" :required="step == 'check-phone'" @send="sendSmsCode" @confirmed="nextStep"></phone-code-checker>
+					</div>
+				</div>
+				<div v-show="step == 1" class="form-content">
+																				<div class="form-item form-item--LAST_NAME  required  ">
+						<label for="LAST_NAME">{{ $t('LAST_NAME') || "\u0424\u0430\u043c\u0438\u043b\u0438\u044f" }}</label>
+													<input name="REGISTER[LAST_NAME]" value="" type="text" :required="step == 1" placeholder="">
+																			<span v-if="errors['LAST_NAME'] && errors['LAST_NAME'].length" class="error" v-html="errors['LAST_NAME'].join('<br/>')"></span>
+					</div>
+															<div class="form-item form-item--NAME  required  ">
+						<label for="NAME">{{ $t('NAME') || "\u0418\u043c\u044f" }}</label>
+													<input name="REGISTER[NAME]" value="" type="text" :required="step == 1" placeholder="">
+																			<span v-if="errors['NAME'] && errors['NAME'].length" class="error" v-html="errors['NAME'].join('<br/>')"></span>
+					</div>
+															<div class="form-item form-item--SECOND_NAME  ">
+						<label for="SECOND_NAME">{{ $t('SECOND_NAME') || "\u041e\u0442\u0447\u0435\u0441\u0442\u0432\u043e" }}</label>
+													<input name="REGISTER[SECOND_NAME]" value="" type="text" placeholder="">
+																			<span v-if="errors['SECOND_NAME'] && errors['SECOND_NAME'].length" class="error" v-html="errors['SECOND_NAME'].join('<br/>')"></span>
+					</div>
+																				<div class="form-item form-item--PERSONAL_CITY  required  ">
+						<label for="PERSONAL_CITY">{{ $t('PERSONAL_CITY') || "\u0413\u043e\u0440\u043e\u0434" }}</label>
+						<select name="REGISTER[PERSONAL_CITY]" required="" class="form__control"><option value="">{{ $t('UKAZHITE_VASH_GOROD') }}</option><option>Абаза</option><option>Абакан</option><option>Абдулино</option><option>Абинск</option><option>Агидель</option><option>Агрыз</option><option>Адыгейск</option><option>Азнакаево</option><option>Азов</option><option>Ак-Довурак</option><option>Аксай</option><option>Актобе</option><option>Алагир</option><option>Алапаевск</option><option>Алатырь</option><option>Алдан</option><option>Алейск</option><option>Александров</option><option>Александровск</option><option>Александровск-Сахалинский</option><option>Алексеевка</option><option>Алексин</option><option>Алзамай</option><option>Алматы</option><option>Альметьевск</option><option>Амурск</option><option>Анадырь</option><option>Анапа</option><option>Ангарск</option><option>Андреаполь</option><option>Анжеро-Судженск</option><option>Анива</option><option>Апатиты</option><option>Апрелевка</option><option>Апшеронск</option><option>Арамиль</option><option>Аргун</option><option>Ардатов</option><option>Ардон</option><option>Арзамас</option><option>Аркадак</option><option>Армавир</option><option>Арсеньев</option><option>Арск</option><option>Артём</option><option>Артёмовск</option><option>Артёмовский</option><option>Архангельск</option><option>Асбест</option><option>Асино</option><option>Астрахань</option><option>Аткарск</option><option>Ахтубинск</option><option>Ачинск</option><option>Аша</option><option>Бабаево</option><option>Бабушкин</option><option>Бавлы</option><option>Багратионовск</option><option>Байкальск</option><option>Баймак</option><option>Бакал</option><option>Баксан</option><option>Балабаново</option><option>Балаково</option><option>Балахна</option><option>Балашиха</option><option>Балашов</option><option>Балей</option><option>Балтийск</option><option>Барабинск</option><option>Барнаул</option><option>Барыш</option><option>Батайск</option><option>Бежецк</option><option>Белая Калитва</option><option>Белая Холуница</option><option>Белгород</option><option>Белебей</option><option>Белёв</option><option>Белинский</option><option>Белово</option><option>Белогорск</option><option>Белозерск</option><option>Белокуриха</option><option>Беломорск</option><option>Белорецк</option><option>Белореченск</option><option>Белоусово</option><option>Белоярский</option><option>Белый</option><option>Бердск</option><option>Березники</option><option>Берёзовский</option><option>Берёзовский</option><option>Беслан</option><option>Бийск</option><option>Бикин</option><option>Билибино</option><option>Биробиджан</option><option>Бирск</option><option>Бирюсинск</option><option>Бирюч</option><option>Бишкек</option><option>Благовещенск</option><option>Благовещенск</option><option>Благодарный</option><option>Бобров</option><option>Богданович</option><option>Богородицк</option><option>Богородск</option><option>Боготол</option><option>Богучар</option><option>Бодайбо</option><option>Бокситогорск</option><option>Болгар</option><option>Бологое</option><option>Болотное</option><option>Болохово</option><option>Болхов</option><option>Большой Камень</option><option>Бор</option><option>Борзя</option><option>Борисоглебск</option><option>Боровичи</option><option>Боровск</option><option>Бородино</option><option>Братск</option><option>Бронницы</option><option>Брянск</option><option>Бугульма</option><option>Бугуруслан</option><option>Будённовск</option><option>Бузулук</option><option>Буинск</option><option>Буй</option><option>Буйнакск</option><option>Бутурлиновка</option><option>Валдай</option><option>Валуйки</option><option>Велиж</option><option>Великие Луки</option><option>Великий Новгород</option><option>Великий Устюг</option><option>Вельск</option><option>Венёв</option><option>Верещагино</option><option>Верея</option><option>Верхнеуральск</option><option>Верхний Тагил</option><option>Верхний Уфалей</option><option>Верхняя Пышма</option><option>Верхняя Салда</option><option>Верхняя Тура</option><option>Верхотурье</option><option>Верхоянск</option><option>Весьегонск</option><option>Ветлуга</option><option>Видное</option><option>Вилюйск</option><option>Вилючинск</option><option>Вихоревка</option><option>Вичуга</option><option>Владивосток</option><option>Владикавказ</option><option>Владимир</option><option>Волгоград</option><option>Волгодонск</option><option>Волгореченск</option><option>Волжск</option><option>Волжский</option><option>Вологда</option><option>Володарск</option><option>Волоколамск</option><option>Волосово</option><option>Волхов</option><option>Волчанск</option><option>Вольск</option><option>Воркута</option><option>Воронеж</option><option>Ворсма</option><option>Воскресенск</option><option>Воткинск</option><option>Всеволожск</option><option>Вуктыл</option><option>Выборг</option><option>Выкса</option><option>Высоковск</option><option>Высоцк</option><option>Вытегра</option><option>Вышний Волочёк</option><option>Вяземский</option><option>Вязники</option><option>Вязьма</option><option>Вятские Поляны</option><option>Гаврилов Посад</option><option>Гаврилов-Ям</option><option>Гагарин</option><option>Гаджиево</option><option>Гай</option><option>Галич</option><option>Гатчина</option><option>Гвардейск</option><option>Гдов</option><option>Геленджик</option><option>Георгиевск</option><option>Глазов</option><option>Голицыно</option><option>Горбатов</option><option>Горно-Алтайск</option><option>Горнозаводск</option><option>Горняк</option><option>Городец</option><option>Городище</option><option>Городовиковск</option><option>Гороховец</option><option>Горячий Ключ</option><option>Грайворон</option><option>Гремячинск</option><option>Грозный</option><option>Грязи</option><option>Грязовец</option><option>Губаха</option><option>Губкин</option><option>Губкинский</option><option>Гудермес</option><option>Гуково</option><option>Гулькевичи</option><option>Гурьевск</option><option>Гурьевск</option><option>Гусев</option><option>Гусиноозёрск</option><option>Гусь-Хрустальный</option><option>Давлеканово</option><option>Дагестанские Огни</option><option>Далматово</option><option>Дальнегорск</option><option>Дальнереченск</option><option>Данилов</option><option>Данков</option><option>Дегтярск</option><option>Дедовск</option><option>Демидов</option><option>Дербент</option><option>Десногорск</option><option>Дзержинск</option><option>Дзержинский</option><option>Дивногорск</option><option>Дигора</option><option>Димитровград</option><option>Дмитриев</option><option>Дмитров</option><option>Дмитровск</option><option>Дно</option><option>Добрянка</option><option>Долгопрудный</option><option>Долинск</option><option>Домодедово</option><option>Донецк</option><option>Донской</option><option>Дорогобуж</option><option>Дрезна</option><option>Дубна</option><option>Дубовка</option><option>Дудинка</option><option>Духовщина</option><option>Душанбе</option><option>Дюртюли</option><option>Дятьково</option><option>Егорьевск</option><option>Ейск</option><option>Екатеринбург</option><option>Елабуга</option><option>Елец</option><option>Елизово</option><option>Ельня</option><option>Еманжелинск</option><option>Емва</option><option>Енисейск</option><option>Ереван</option><option>Ермолино</option><option>Ершов</option><option>Ессентуки</option><option>Ефремов</option><option>Железноводск</option><option>Железногорск</option><option>Железногорск</option><option>Железногорск-Илимский</option><option>Железнодорожный</option><option>Жердевка</option><option>Жигулёвск</option><option>Жиздра</option><option>Жирновск</option><option>Жуков</option><option>Жуковка</option><option>Жуковский</option><option>Завитинск</option><option>Заводоуковск</option><option>Заволжск</option><option>Заволжье</option><option>Задонск</option><option>Заинск</option><option>Закаменск</option><option>Заозёрный</option><option>Заозёрск</option><option>Западная Двина</option><option>Заполярный</option><option>Зарайск</option><option>Заречный</option><option>Заречный</option><option>Заринск</option><option>Звенигово</option><option>Звенигород</option><option>Зверево</option><option>Зеленогорск</option><option>Зеленогорск</option><option>Зеленоградск</option><option>Зеленодольск</option><option>Зеленокумск</option><option>Зерноград</option><option>Зея</option><option>Зима</option><option>Златоуст</option><option>Злынка</option><option>Змеиногорск</option><option>Знаменск</option><option>Зубцов</option><option>Зуевка</option><option>Ивангород</option><option>Иваново</option><option>Ивантеевка</option><option>Ивдель</option><option>Игарка</option><option>Ижевск</option><option>Избербаш</option><option>Изобильный</option><option>Иланский</option><option>Инза</option><option>Инсар</option><option>Инта</option><option>Ипатово</option><option>Ирбит</option><option>Иркутск</option><option>Исилькуль</option><option>Искитим</option><option>Истра</option><option>Ишим</option><option>Ишимбай</option><option>Йошкар-Ола</option><option>Кадников</option><option>Казань</option><option>Калач</option><option>Калач-на-Дону</option><option>Калачинск</option><option>Калининград</option><option>Калининск</option><option>Калтан</option><option>Калуга</option><option>Калязин</option><option>Камбарка</option><option>Каменка</option><option>Каменногорск</option><option>Каменск-Уральский</option><option>Каменск-Шахтинский</option><option>Камень-на-Оби</option><option>Камешково</option><option>Камызяк</option><option>Камышин</option><option>Камышлов</option><option>Канаш</option><option>Кандалакша</option><option>Канск</option><option>Карабаново</option><option>Карабаш</option><option>Карабулак</option><option>Караганда</option><option>Карасук</option><option>Карачаевск</option><option>Карачев</option><option>Каргат</option><option>Каргополь</option><option>Карпинск</option><option>Карталы</option><option>Касимов</option><option>Касли</option><option>Каспийск</option><option>Катав-Ивановск</option><option>Катайск</option><option>Качканар</option><option>Кашин</option><option>Кашира</option><option>Кедровый</option><option>Кемерово</option><option>Кемь</option><option>Кизел</option><option>Кизилюрт</option><option>Кизляр</option><option>Кимовск</option><option>Кимры</option><option>Кингисепп</option><option>Кинель</option><option>Кинешма</option><option>Киреевск</option><option>Киренск</option><option>Киржач</option><option>Кириллов</option><option>Кириши</option><option>Киров</option><option>Киров</option><option>Кировград</option><option>Кирово-Чепецк</option><option>Кировск</option><option>Кировск</option><option>Кирс</option><option>Кирсанов</option><option>Киселёвск</option><option>Кисловодск</option><option>Климовск</option><option>Клин</option><option>Клинцы</option><option>Княгинино</option><option>Ковдор</option><option>Ковров</option><option>Ковылкино</option><option>Когалым</option><option>Кодинск</option><option>Козельск</option><option>Козловка</option><option>Козьмодемьянск</option><option>Кола</option><option>Кологрив</option><option>Коломна</option><option>Колпашево</option><option>Колпино</option><option>Кольчугино</option><option>Коммунар</option><option>Комсомольск</option><option>Комсомольск-на-Амуре</option><option>Конаково</option><option>Кондопога</option><option>Кондрово</option><option>Константиновск</option><option>Копейск</option><option>Кораблино</option><option>Кореновск</option><option>Коркино</option><option>Королёв</option><option>Короча</option><option>Корсаков</option><option>Коряжма</option><option>Костерёво</option><option>Костомукша</option><option>Кострома</option><option>Котельники</option><option>Котельниково</option><option>Котельнич</option><option>Котлас</option><option>Котово</option><option>Котовск</option><option>Кохма</option><option>Красавино</option><option>Красноармейск</option><option>Красноармейск</option><option>Красновишерск</option><option>Красногорск</option><option>Краснодар</option><option>Красное Село</option><option>Краснозаводск</option><option>Краснознаменск</option><option>Краснознаменск</option><option>Краснокаменск</option><option>Краснокамск</option><option>Краснослободск</option><option>Краснослободск</option><option>Краснотурьинск</option><option>Красноуральск</option><option>Красноуфимск</option><option>Красноярск</option><option>Красный Кут</option><option>Красный Сулин</option><option>Красный Холм</option><option>Кремёнки</option><option>Кронштадт</option><option>Кропоткин</option><option>Крымск</option><option>Кстово</option><option>Кубинка</option><option>Кувандык</option><option>Кувшиново</option><option>Кудымкар</option><option>Кузнецк</option><option>Куйбышев</option><option>Кулебаки</option><option>Кумертау</option><option>Кунгур</option><option>Купино</option><option>Курган</option><option>Курганинск</option><option>Курильск</option><option>Курлово</option><option>Куровское</option><option>Курск</option><option>Куртамыш</option><option>Курчатов</option><option>Куса</option><option>Кушва</option><option>Кызыл</option><option>Кыштым</option><option>Кяхта</option><option>Лабинск</option><option>Лабытнанги</option><option>Лагань</option><option>Ладушкин</option><option>Лаишево</option><option>Лакинск</option><option>Лангепас</option><option>Лахденпохья</option><option>Лебедянь</option><option>Лениногорск</option><option>Ленинск</option><option>Ленинск-Кузнецкий</option><option>Ленск</option><option>Лермонтов</option><option>Лесной</option><option>Лесозаводск</option><option>Лесосибирск</option><option>Ливны</option><option>Ликино-Дулёво</option><option>Липецк</option><option>Липки</option><option>Лиски</option><option>Лихославль</option><option>Лобня</option><option>Лодейное Поле</option><option>Ломоносов</option><option>Лосино-Петровский</option><option>Луга</option><option>Луза</option><option>Лукоянов</option><option>Луховицы</option><option>Лысково</option><option>Лысьва</option><option>Лыткарино</option><option>Льгов</option><option>Любань</option><option>Люберцы</option><option>Любим</option><option>Людиново</option><option>Лянтор</option><option>Магадан</option><option>Магас</option><option>Магнитогорск</option><option>Майкоп</option><option>Майский</option><option>Макаров</option><option>Макарьев</option><option>Макушино</option><option>Малая Вишера</option><option>Малгобек</option><option>Малмыж</option><option>Малоархангельск</option><option>Малоярославец</option><option>Мамадыш</option><option>Мамоново</option><option>Мантурово</option><option>Мариинск</option><option>Мариинский Посад</option><option>Маркс</option><option>Махачкала</option><option>Мглин</option><option>Мегион</option><option>Медвежьегорск</option><option>Медногорск</option><option>Медынь</option><option>Межгорье</option><option>Междуреченск</option><option>Мезень</option><option>Меленки</option><option>Мелеуз</option><option>Менделеевск</option><option>Мензелинск</option><option>Мещовск</option><option>Миасс</option><option>Микунь</option><option>Миллерово</option><option>Минеральные Воды</option><option>Минск</option><option>Минусинск</option><option>Миньяр</option><option>Мирный</option><option>Мирный</option><option>Михайлов</option><option>Михайловка</option><option>Михайловск</option><option>Михайловск</option><option>Мичуринск</option><option>Могоча</option><option>Можайск</option><option>Можга</option><option>Моздок</option><option>Мончегорск</option><option>Морозовск</option><option>Моршанск</option><option>Мосальск</option><option>Москва</option><option>Московский</option><option>Муравленко</option><option>Мураши</option><option>Мурманск</option><option>Муром</option><option>Мценск</option><option>Мыски</option><option>Мытищи</option><option>Мышкин</option><option>Набережные Челны</option><option>Навашино</option><option>Наволоки</option><option>Надым</option><option>Назарово</option><option>Назрань</option><option>Называевск</option><option>Нальчик</option><option>Нариманов</option><option>Наро-Фоминск</option><option>Нарткала</option><option>Нарьян-Мар</option><option>Находка</option><option>Невель</option><option>Невельск</option><option>Невинномысск</option><option>Невьянск</option><option>Нелидово</option><option>Неман</option><option>Нерехта</option><option>Нерчинск</option><option>Нерюнгри</option><option>Нестеров</option><option>Нефтегорск</option><option>Нефтекамск</option><option>Нефтекумск</option><option>Нефтеюганск</option><option>Нея</option><option>Нижневартовск</option><option>Нижнекамск</option><option>Нижнеудинск</option><option>Нижние Серги</option><option>Нижний Ломов</option><option>Нижний Новгород</option><option>Нижний Тагил</option><option>Нижняя Салда</option><option>Нижняя Тура</option><option>Николаевск</option><option>Николаевск-на-Амуре</option><option>Никольск</option><option>Никольск</option><option>Никольское</option><option>Новая Ладога</option><option>Новая Ляля</option><option>Новоалександровск</option><option>Новоалтайск</option><option>Новоаннинский</option><option>Нововоронеж</option><option>Новодвинск</option><option>Новозыбков</option><option>Новокубанск</option><option>Новокузнецк</option><option>Новокузнецк</option><option>Новокуйбышевск</option><option>Новомичуринск</option><option>Новомосковск</option><option>Новопавловск</option><option>Новоржев</option><option>Новороссийск</option><option>Новосибирск</option><option>Новосиль</option><option>Новосокольники</option><option>Новотроицк</option><option>Новоузенск</option><option>Новоульяновск</option><option>Новоуральск</option><option>Новохопёрск</option><option>Новочебоксарск</option><option>Новочеркасск</option><option>Новошахтинск</option><option>Новый Оскол</option><option>Новый Уренгой</option><option>Ногинск</option><option>Нолинск</option><option>Норильск</option><option>Ноябрьск</option><option>Нур-Султан (Астана)</option><option>Нурлат</option><option>Нытва</option><option>Нюрба</option><option>Нягань</option><option>Нязепетровск</option><option>Няндома</option><option>Облучье</option><option>Обнинск</option><option>Обоянь</option><option>Обь</option><option>Одинцово</option><option>Ожерелье</option><option>Озёрск</option><option>Озёрск</option><option>Озёры</option><option>Октябрьск</option><option>Октябрьский</option><option>Окуловка</option><option>Олёкминск</option><option>Оленегорск</option><option>Олонец</option><option>Омск</option><option>Омутнинск</option><option>Онега</option><option>Опочка</option><option>Орёл</option><option>Оренбург</option><option>Орехово-Зуево</option><option>Орлов</option><option>Орск</option><option>Оса</option><option>Осинники</option><option>Осташков</option><option>Остров</option><option>Островной</option><option>Острогожск</option><option>Отрадное</option><option>Отрадный</option><option>Оха</option><option>Оханск</option><option>Очёр</option><option>Павлово</option><option>Павловск</option><option>Павловск</option><option>Павловский Посад</option><option>Палласовка</option><option>Партизанск</option><option>Певек</option><option>Пенза</option><option>Первомайск</option><option>Первоуральск</option><option>Перевоз</option><option>Пересвет</option><option>Переславль-Залесский</option><option>Пермь</option><option>Пестово</option><option>Петергоф</option><option>Петров Вал</option><option>Петровск</option><option>Петровск-Забайкальский</option><option>Петрозаводск</option><option>Петропавловск-Камчатский</option><option>Петухово</option><option>Петушки</option><option>Печора</option><option>Печоры</option><option>Пикалёво</option><option>Пионерский</option><option>Питкяранта</option><option>Плавск</option><option>Пласт</option><option>Плёс</option><option>Поворино</option><option>Подольск</option><option>Подпорожье</option><option>Покачи</option><option>Покров</option><option>Покровск</option><option>Полевской</option><option>Полесск</option><option>Полысаево</option><option>Полярные Зори</option><option>Полярный</option><option>Поронайск</option><option>Порхов</option><option>Похвистнево</option><option>Почеп</option><option>Починок</option><option>Пошехонье</option><option>Правдинск</option><option>Приволжск</option><option>Приморск</option><option>Приморск</option><option>Приморско-Ахтарск</option><option>Приозерск</option><option>Прокопьевск</option><option>Пролетарск</option><option>Протвино</option><option>Прохладный</option><option>Псков</option><option>Пугачёв</option><option>Пудож</option><option>Пустошка</option><option>Пучеж</option><option>Пушкин</option><option>Пушкино</option><option>Пущино</option><option>Пыталово</option><option>Пыть-Ях</option><option>Пятигорск</option><option>Радужный</option><option>Радужный</option><option>Райчихинск</option><option>Раменское</option><option>Рассказово</option><option>Ревда</option><option>Реж</option><option>Реутов</option><option>Ржев</option><option>Рига</option><option>Родники</option><option>Рославль</option><option>Россошь</option><option>Ростов</option><option>Ростов-на-Дону</option><option>Рошаль</option><option>Ртищево</option><option>Рубцовск</option><option>Рудня</option><option>Руза</option><option>Рузаевка</option><option>Рыбинск</option><option>Рыбное</option><option>Рыльск</option><option>Ряжск</option><option>Рязань</option><option>Салават</option><option>Салаир</option><option>Салехард</option><option>Сальск</option><option>Самара</option><option>Санкт-Петербург</option><option>Саранск</option><option>Сарапул</option><option>Саратов</option><option>Саров</option><option>Сасово</option><option>Сатка</option><option>Сафоново</option><option>Саяногорск</option><option>Саянск</option><option>Светлогорск</option><option>Светлоград</option><option>Светлый</option><option>Светогорск</option><option>Свирск</option><option>Свободный</option><option>Себеж</option><option>Севастополь</option><option>Северо-Курильск</option><option>Северобайкальск</option><option>Северодвинск</option><option>Североморск</option><option>Североуральск</option><option>Северск</option><option>Севск</option><option>Сегежа</option><option>Сельцо</option><option>Семёнов</option><option>Семикаракорск</option><option>Семилуки</option><option>Сенгилей</option><option>Серафимович</option><option>Сергач</option><option>Сергиев Посад</option><option>Сердобск</option><option>Серов</option><option>Серпухов</option><option>Сертолово</option><option>Сестрорецк</option><option>Сибай</option><option>Сим</option><option>Симферополь</option><option>Сковородино</option><option>Скопин</option><option>Славгород</option><option>Славск</option><option>Славянск-на-Кубани</option><option>Сланцы</option><option>Слободской</option><option>Слюдянка</option><option>Смоленск</option><option>Снежинск</option><option>Снежногорск</option><option>Собинка</option><option>Советск</option><option>Советск</option><option>Советск</option><option>Советская Гавань</option><option>Советский</option><option>Сокол</option><option>Солигалич</option><option>Соликамск</option><option>Солнечногорск</option><option>Соль-Илецк</option><option>Сольвычегодск</option><option>Сольцы</option><option>Сорочинск</option><option>Сорск</option><option>Сортавала</option><option>Сосенский</option><option>Сосновка</option><option>Сосновоборск</option><option>Сосновый Бор</option><option>Сосногорск</option><option>София</option><option>Сочи</option><option>Спас-Деменск</option><option>Спас-Клепики</option><option>Спасск</option><option>Спасск-Дальний</option><option>Спасск-Рязанский</option><option>Среднеколымск</option><option>Среднеуральск</option><option>Сретенск</option><option>Ставрополь</option><option>Старая Купавна</option><option>Старая Русса</option><option>Старица</option><option>Стародуб</option><option>Старый Оскол</option><option>Стерлитамак</option><option>Стрежевой</option><option>Строитель</option><option>Струнино</option><option>Ступино</option><option>Суворов</option><option>Судак</option><option>Суджа</option><option>Судогда</option><option>Суздаль</option><option>Суоярви</option><option>Сураж</option><option>Сургут</option><option>Суровикино</option><option>Сурск</option><option>Сусуман</option><option>Сухиничи</option><option>Сухой Лог</option><option>Сызрань</option><option>Сыктывкар</option><option>Сысерть</option><option>Сычёвка</option><option>Сясьстрой</option><option>Тавда</option><option>Таганрог</option><option>Тайга</option><option>Тайшет</option><option>Талдом</option><option>Талица</option><option>Тамбов</option><option>Тара</option><option>Тарко-Сале</option><option>Таруса</option><option>Татарск</option><option>Ташкент</option><option>Таштагол</option><option>Тверь</option><option>Теберда</option><option>Тейково</option><option>Темников</option><option>Темрюк</option><option>Терек</option><option>Тетюши</option><option>Тимашёвск</option><option>Тихвин</option><option>Тихорецк</option><option>Тобольск</option><option>Тогучин</option><option>Тольятти</option><option>Томари</option><option>Томмот</option><option>Томск</option><option>Топки</option><option>Торжок</option><option>Торопец</option><option>Тосно</option><option>Тотьма</option><option>Трёхгорный</option><option>Троицк</option><option>Троицк</option><option>Трубчевск</option><option>Туапсе</option><option>Туймазы</option><option>Тула</option><option>Тулун</option><option>Туран</option><option>Туринск</option><option>Тутаев</option><option>Тында</option><option>Тырныауз</option><option>Тюкалинск</option><option>Тюмень</option><option>Уварово</option><option>Углегорск</option><option>Углич</option><option>Удачный</option><option>Удомля</option><option>Ужур</option><option>Узловая</option><option>Улан-Удэ</option><option>Ульяновск</option><option>Унеча</option><option>Урай</option><option>Уральск</option><option>Урень</option><option>Уржум</option><option>Урус-Мартан</option><option>Урюпинск</option><option>Усинск</option><option>Усмань</option><option>Усолье</option><option>Усолье-Сибирское</option><option>Уссурийск</option><option>Усть-Джегута</option><option>Усть-Илимск</option><option>Усть-Катав</option><option>Усть-Кут</option><option>Усть-Лабинск</option><option>Устюжна</option><option>Уфа</option><option>Ухта</option><option>Учалы</option><option>Уяр</option><option>Фатеж</option><option>Фокино</option><option>Фокино</option><option>Фролово</option><option>Фрязино</option><option>Фурманов</option><option>Хабаровск</option><option>Хадыженск</option><option>Ханты-Мансийск</option><option>Харабали</option><option>Харовск</option><option>Хасавюрт</option><option>Хвалынск</option><option>Хилок</option><option>Химки</option><option>Холм</option><option>Холмск</option><option>Хотьково</option><option>Цивильск</option><option>Цимлянск</option><option>Цхинвал</option><option>Чадан</option><option>Чайковский</option><option>Чапаевск</option><option>Чаплыгин</option><option>Чебаркуль</option><option>Чебоксары</option><option>Чегем</option><option>Чекалин</option><option>Челябинск</option><option>Чердынь</option><option>Черемхово</option><option>Черепаново</option><option>Череповец</option><option>Черкесск</option><option>Чёрмоз</option><option>Черноголовка</option><option>Черногорск</option><option>Чернушка</option><option>Черняховск</option><option>Чехов</option><option>Чистополь</option><option>Чита</option><option>Чкаловск</option><option>Чудово</option><option>Чулым</option><option>Чусовой</option><option>Чухлома</option><option>Шагонар</option><option>Шадринск</option><option>Шали</option><option>Шарыпово</option><option>Шарья</option><option>Шатура</option><option>Шахтёрск</option><option>Шахты</option><option>Шахунья</option><option>Шацк</option><option>Шебекино</option><option>Шелехов</option><option>Шенкурск</option><option>Шилка</option><option>Шимановск</option><option>Шиханы</option><option>Шлиссельбург</option><option>Шумерля</option><option>Шумиха</option><option>Шуя</option><option>Шымкент</option><option>Щёкино</option><option>Щёлково</option><option>Щербинка</option><option>Щигры</option><option>Щучье</option><option>Электрогорск</option><option>Электросталь</option><option>Электроугли</option><option>Элиста</option><option>Энгельс</option><option>Эртиль</option><option>Юбилейный</option><option>Югорск</option><option>Южа</option><option>Южно-Сахалинск</option><option>Южно-Сухокумск</option><option>Южноуральск</option><option>Юрга</option><option>Юрьев-Польский</option><option>Юрьевец</option><option>Юрюзань</option><option>Юхнов</option><option>Ядрин</option><option>Якутск</option><option>Ялта</option><option>Ялуторовск</option><option>Янаул</option><option>Яранск</option><option>Яровое</option><option>Ярославль</option><option>Ярцево</option><option>Ясногорск</option><option>Ясный</option><option>Яхрома</option></select>												<span v-if="errors['PERSONAL_CITY'] && errors['PERSONAL_CITY'].length" class="error" v-html="errors['PERSONAL_CITY'].join('<br/>')"></span>
+					</div>
+															<div class="form-item form-item--PERSONAL_PHONE  required  ">
+						<label for="PERSONAL_PHONE">{{ $t('PERSONAL_PHONE') || "\u0422\u0435\u043b\u0435\u0444\u043e\u043d" }}</label>
+																				<input class="phone-mask" :required="step == 1" size="30" type="tel" name="REGISTER[PERSONAL_PHONE]" value="" class="form__control ">
+																			<span v-if="errors['PERSONAL_PHONE'] && errors['PERSONAL_PHONE'].length" class="error" v-html="errors['PERSONAL_PHONE'].join('<br/>')"></span>
+					</div>
+															<div class="form-item form-item--EMAIL  required  ">
+						<label for="EMAIL">{{ $t('EMAIL') || "E-mail" }}</label>
+						<input name="REGISTER[EMAIL]" value="" type="email" :required="step == 1" placeholder="name@mail.ru">												<span v-if="errors['EMAIL'] && errors['EMAIL'].length" class="error" v-html="errors['EMAIL'].join('<br/>')"></span>
+					</div>
+																			</div>
+				<div v-if="step == 2">
+					<div class="form-content">
+																																										<div class="form-item form-item--PERSONAL_BIRTHDAY  ">
+							<label for="PERSONAL_BIRTHDAY">{{ $t('PERSONAL_BIRTHDAY') || "\u0414\u0430\u0442\u0430 \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f" }}</label>
+							<input class="date-mask datepicker-here" type="text" name="REGISTER[PERSONAL_BIRTHDAY]" value="">														<span v-if="errors['PERSONAL_BIRTHDAY'] && errors['PERSONAL_BIRTHDAY'].length" class="error" v-html="errors['PERSONAL_BIRTHDAY'].join('<br/>')"></span>
+						</div>
+																																																						
+
+																								<div class="form-item form-item--UF_SPECIALIZATION  ">
+							<label>{{ $t('UF_SPECIALIZATION') }}</label>
+																<select name="UF_SPECIALIZATION">
+																				<option value="4">Стоматолог-терапевт</option>
+																				<option value="5">Стоматолог-ортопед</option>
+																				<option value="6">Стоматолог-ортодонт</option>
+																				<option value="7">Пародонтолог</option>
+																				<option value="8">Стоматолог-хирург</option>
+																				<option value="9">Детский стоматолог</option>
+																				<option value="10">Зубной техник</option>
+																				<option value="56">Универсал</option>
+																			</select>
+																									<span v-if="errors['UF_SPECIALIZATION'] && errors['UF_SPECIALIZATION'].length" class="error" v-html="errors['UF_SPECIALIZATION'].join('<br/>')"></span>
+							</div>
+
+													<div class="form-item form-item--UF_RECEPTION_ADDRESS  required  ">
+							<label>{{ $t('UF_RECEPTION_ADDRESS') }}</label>
+																										<input type="text" name="UF_RECEPTION_ADDRESS" required="" value="">
+																																			<span v-if="errors['UF_RECEPTION_ADDRESS'] && errors['UF_RECEPTION_ADDRESS'].length" class="error" v-html="errors['UF_RECEPTION_ADDRESS'].join('<br/>')"></span>
+							</div>
+
+													<div class="form-item form-item--UF_REG_SOURCE  ">
+							<label>{{ $t('UF_REG_SOURCE') }}</label>
+																									<div>
+																				<div class="form-input form-input--radio">
+											<input id="UF_REG_SOURCE-11" name="UF_REG_SOURCE" type="radio" value="11" v-model="regSource">
+											<label for="UF_REG_SOURCE-11">
+												{{ $t('2426f5a0f6e0977dec8021fb86b9a828') }}
+											</label>
+										</div>
+																				<div class="form-input form-input--radio">
+											<input id="UF_REG_SOURCE-12" name="UF_REG_SOURCE" type="radio" value="12" v-model="regSource">
+											<label for="UF_REG_SOURCE-12">
+												{{ $t('0205635dca936c7f169caa53030af250') }}
+											</label>
+										</div>
+																			</div>
+																																		<span v-if="errors['UF_REG_SOURCE'] && errors['UF_REG_SOURCE'].length" class="error" v-html="errors['UF_REG_SOURCE'].join('<br/>')"></span>
+							</div>
+
+													<div v-if="regSource == 12" class="form-item form-item--UF_REG_COMPANY_NAME  required  ">
+							<label>{{ $t('UF_REG_COMPANY_NAME') }}</label>
+																										<input type="text" name="UF_REG_COMPANY_NAME" required="" value="">
+																																			<span v-if="errors['UF_REG_COMPANY_NAME'] && errors['UF_REG_COMPANY_NAME'].length" class="error" v-html="errors['UF_REG_COMPANY_NAME'].join('<br/>')"></span>
+							</div>
+
+													<div class="form-item form-item--UF_INSTAGRAM  ">
+							<label>{{ $t('UF_INSTAGRAM') }}</label>
+																										<input type="text" name="UF_INSTAGRAM" value="">
+																					<label>{{ $t('PRIMER') }}: https://www.instagram.com/eurokappa.ru/</label>
+																																			<span v-if="errors['UF_INSTAGRAM'] && errors['UF_INSTAGRAM'].length" class="error" v-html="errors['UF_INSTAGRAM'].join('<br/>')"></span>
+							</div>
+
+														                            						</div>
+						<div class="form-content">
+													<div class="form-item form-item--PASSWORD  required  ">
+							<label for="PASSWORD">{{ $t('PASSWORD') || "\u041f\u0430\u0440\u043e\u043b\u044c" }}</label>
+							<input name="REGISTER[PASSWORD]" value="" type="password" required="" placeholder="&#8226; &#8226; &#8226; &#8226; &#8226;">																						<span v-if="errors['PASSWORD'] && errors['PASSWORD'].length" class="error" v-html="errors['PASSWORD'].join('<br/>')"></span>
+						</div>
+												<div class="form-item form-item--CONFIRM_PASSWORD  required  ">
+							<label for="CONFIRM_PASSWORD">{{ $t('CONFIRM_PASSWORD') || "\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u0435 \u043f\u0430\u0440\u043e\u043b\u044f" }}</label>
+							<input name="REGISTER[CONFIRM_PASSWORD]" value="" type="password" required="" placeholder="&#8226; &#8226; &#8226; &#8226; &#8226;">														<span v-if="errors['CONFIRM_PASSWORD'] && errors['CONFIRM_PASSWORD'].length" class="error" v-html="errors['CONFIRM_PASSWORD'].join('<br/>')"></span>
+						</div>
+												</div>
+
+					</div>
+
+										<div v-if="!~[ 'check-phone', 'reg-completed', ].indexOf(step)" class="form-input form-input--site_rules_accept_check form-input--checkbox ">
+						<input id="site_rules_accept_check" name="site_rules_accept_check" type="checkbox" required="" value="Y">
+						<label for="site_rules_accept_check">{{ $t('YA_SOGLASEN') }} <a href="#site-rules" class="fancybox">{{ $t('S_PRAVILAMI_SAYTA') }}</a></label>
+					</div>
+					<div v-if="!~[ 'check-phone', 'reg-completed', ].indexOf(step)" class="form-submit">
+						<input class="btn btn--default btn--shadow b-rad-mid" name="register_submit_button" type="submit" :value="$t('ZAREGISTRIROVATSYA')">
+					</div>
+				</template>
+			</form>
+		</div>
+		</template>
+
+		
+	</div>
+</register>
+            </template>
+            <template v-if="mode == 'forgot-password'">
+                
+<div class="auth-form-container">
+    <div class="title">{{ $t('VOSSTANOVLENIE_PAROLYA') }}</div>
+            <form class="ek__form-block" id="ek__form" name="bform" method="post" target="_top" action="/?forgot_password=yes">
+        <input type="hidden" name="AUTH_FORM" value="Y">
+        <input type="hidden" name="TYPE" value="SEND_PWD">
+                    <input type="hidden" name="backurl" value="/">
+                            <input type="hidden" name="backurl" value="/">
+                <div class="form-content">
+            <div class="form-item form-item">
+                <label for="USER_EMAIL">{{ $t('E_MAIL') }}</label>
+                <input id="USER_EMAIL" name="USER_EMAIL" value="" title="email" type="text">
+            </div>
+        </div>
+        <div class="form-submit">
+            <input class="btn btn-default btn--inverse btn--shadow b-rad-mid g-recaptcha" name="Login" title="enter" type="submit" :value="$t('VOSSTANOVIT_PAROL')">
+            <input type="hidden" name="recaptcha_token" data-action-id="forgot_password_form" value="">
+        </div>
+        <!-- <div class="">
+            <div class="">
+                <a class="btn btn-default btn--shadow b-rad-mid" href="/personal/register/">Зарегистрироваться</a>
+            </div>
+            <div class="">
+                <a class="btn btn-default btn--shadow b-rad-mid" href="/?login=yes" >Войти</a>
+            </div>
+        </div> -->
+    </form>
+</div>
+            </template>
+        </div>
+        <div class="auth-block-foot">
+            <div class="auth-block-foot-contols">
+                <template v-if="mode == 'reg'">
+                    <p>
+                        {{ $t('U_MENYA_UZHE_EST_AKKAUNT') }} <a @click.prevent="mode = 'auth'" href="#">{{ $t('VOYTI') }}</a>
+                    </p>
+                </template>
+                <template v-if="mode == 'auth'">
+                    <p>
+                        {{ $t('ZABYLI_PAROL') }} <a @click.prevent="mode = 'forgot-password'" href="#">{{ $t('VOSSTANOVIT_PAROL') }}</a>
+                    </p>
+                    <p>
+                        {{ $t('U_MENYA_NET_AKKAUNTA') }} <a @click.prevent="mode = 'reg'" href="#">{{ $t('ZAREGISTRIROVATSYA') }}</a>
+                    </p>
+                </template>
+                                                <div class="lang-select-container">
+                    <select v-if="curLangCode" class="lang-select" v-model="curLangCode">
+                                                <option value="RU">Русский</option>
+                                                <option value="EN">English</option>
+                                            </select>
+                </div>
+                                    <div style="display:flex;align-items: center;justify-content: center;padding-top:20px;">
+                        <a href='https://apps.apple.com/us/app/eurokappa-pro/id1548249247'>
+                            <img alt='Доступно в App store' style="height:47px;padding-top:8px; padding-bottom:8px;" src='local\templates\.default\img\apple_store.svg'>
+                        </a>
+                        <a href='https://play.google.com/store/apps/details?id=pro.eurokappa.lk&hl=ru&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                            <img style="height:46px;" alt='Доступно в Google Play' src='local\templates\.default\img\google_app.svg'>
+                        </a>
+                    </div>
+                                            </div>
+
+        </div>
+
+    </div>
+</auth-reg>
+
+<div id="site-rules" style="display: none;" class="hide">
+    
+<ul style="margin: 0; padding: 0; font-weight: bold;">
+    1. ОБЩИЕ ПОЛОЖЕНИЯ
+    <li style="list-style-type: none; margin: 0; padding: 5px 0 0 0; font-weight: 300;">
+        1.1. Общество с ограниченной ответственностью «Сан Смайл» ОГРН 1147746843837 ИНН 7707839805, КПП 770701001, адрес местонахождения: 127055, Москва, ул. Палиха, д.10, стр.9 (далее – «Компания»), обязуется соблюдать конфиденциальность данных и информации, предоставляемых пользователями («Пользователь») при использовании сайта <a href="http://eurokappa.ru" target="_blank" style="color: #007ff0">http://eurokappa.ru</a>, а также при пользовании и участии в чатах Компании в мессенджерах WhatsApp, Viber, Telegram (далее – «Мессенджеры» или «Мессенджер»).
+    </li>
+    <li style="list-style-type: none; margin: 0; padding: 5px 0 0 0; font-weight: 300;">
+        1.2. Данной Политикой устанавливаются правила, в соответствии с которыми Компания осуществляет сбор и/или обработку данных и информации, которые предоставляет Пользователь или которые становятся доступны Компании в процессе пользования Пользователем сайтом и/или Мессенджерами.
+    </li>
+    <li style="list-style-type: none; margin: 0; padding: 5px 0 0 0; font-weight: 300;">
+        1.3. Условием использования сайта и/или Мессенджера является согласие Пользователя с настоящей Политикой, размещенной на Сайте Компании по адресу: <a href="http://eurokappa.ru" target="_blank" style="color: #007ff0">http://eurokappa.ru</a>. При каждом доступе и/или фактическом использовании сайта и/или Мессенджера Пользователь соглашается с условиями настоящей Политики.
+    </li>
+</ul>
+
+<ul style="margin: 20px 0 0 0; padding: 0; font-weight: bold;">
+    2. ОБРАБАТЫВАЕМЫЕ КОМПАНИЕЙ ДАННЫЕ И ИНАЯ ИНФОРМАЦИЯ
+    <li style="list-style-type: none; margin: 0; padding: 5px 0 0 0; font-weight: 300;">
+        2.1. Пользователь дает согласие на обработку предоставленных данных, т.е. осуществление любых действий (операций) или совокупности действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств, с предоставленными данными, в том числе персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение, в целях:
+
+        <ul>
+            <li>
+                передачи полученных от Пользователя данных третьим лицам для обработки заявки Пользователя, а именно партнерам и/или внешним специалистам, сотрудничающим с Компанией, и/или лицам, предоставившим заявку от Пользователя и/или передавшим заявку Пользователя Компании, и/или лицам, осуществляющим поддержку служб и услуг Компании, в необходимом для осуществления такой поддержки объеме, и/или компаниям, входящим с Компанией в группу компаний;
+            </li>
+            <li>
+                ознакомления с информационными материалами от имени Компании, в том числе с рекламными материалами Компании и/или третьих лиц;
+            </li>
+            <li>
+                защиты прав и законных интересов Компании;
+            </li>
+            <li>
+                проведения статистических и прочих исследований на основе обезличенных данных.
+            </li>
+        </ul>
+
+    </li>
+
+    <li style="list-style-type: none; margin: 0; padding: 5px 0 0 0; font-weight: 300;">
+        Пользователь дает согласие на обработку предоставленных данных, т.е. осуществление любых действий (операций) или совокупности действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств, с предоставленными данными, в том числе персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение, в целях:
+    </li>
+
+    <li style="list-style-type: none; margin: 0; padding: 5px 0 0 0; font-weight: 300;">
+        2.2. Пользователь соглашается, что информация, включая учетные и иные данные, может быть доступна другим пользователям сети Интернет с учетом существующего функционала Мессенджера.
+    </li>
+    <li style="list-style-type: none; margin: 0; padding: 5px 0 0 0; font-weight: 300;">
+        2.3. Основанием для обработки данных являются: ст. 24 Конституции Российской Федерации, ст. 6 Федерального закона №152-ФЗ «О персональных данных» и Соглашение.<br>
+
+        Согласие на обработку предоставленных данных дается на неопределенный срок и может быть в любой момент отозвано субъектом данных и/или его уполномоченным представителем путем письменного обращения в адрес Компании.
+    </li>
+    <li style="list-style-type: none; margin: 0; padding: 5px 0 0 0; font-weight: 300;">
+        2.4. Компания обязуется в разумные сроки немедленно прекратить обработку предоставленных данных после получения соответствующего письменного требования субъекта данных и/или его уполномоченного представителя, за исключением случаев, когда Компания и/или лица, осуществляющие поддержку служб и услуг Компании, в необходимом для осуществления такой поддержки объеме, и/или компании, входящие с Компанией в группу компаний, вправе и/или обязаны продолжить обработку предоставленных данных, в том числе персональных данных, без согласия субъекта данных (субъекта персональных данных), при наличии оснований, установленных действующим законодательством Российской Федерации.
+
+    </li>
+
+</ul>
+
+<ul style="margin: 20px 0 0 0; padding: 0; font-weight: bold;">
+    3. ДЕЙСТВИЕ НАСТОЯЩЕЙ ПОЛИТИКИ
+    <li style="list-style-type: none; margin: 0; padding: 5px 0 0 0; font-weight: 300;">
+        3.1. Компания оставляет за собой право вносить изменения и дополнения в настоящую Политику. Новая редакция Политики вступает в силу с момента её размещения на сайте по адресу: <a href="http://eurokappa.ru" target="_blank" style="color: #007ff0">http://eurokappa.ru</a>. Пользователь обязуется самостоятельно регулярно знакомиться с новыми редакциями Политики.
+    </li>
+</ul>
+</div>
+    </div>
+    <div class="hidden">
+        <add-company-popup ref="addCompanyPopup" id="add-company-popup" @company-added="companyAdded" :types="[{&quot;ID&quot;:&quot;13&quot;,&quot;USER_FIELD_ID&quot;:&quot;75&quot;,&quot;VALUE&quot;:&quot;\u042e\u0440.\u043b\u0438\u0446\u043e&quot;,&quot;DEF&quot;:&quot;N&quot;,&quot;SORT&quot;:&quot;100&quot;,&quot;XML_ID&quot;:&quot;LEGAL&quot;},{&quot;ID&quot;:&quot;55&quot;,&quot;USER_FIELD_ID&quot;:&quot;75&quot;,&quot;VALUE&quot;:&quot;\u0418\u041f&quot;,&quot;DEF&quot;:&quot;N&quot;,&quot;SORT&quot;:&quot;200&quot;,&quot;XML_ID&quot;:&quot;INDIVIDUAL&quot;},{&quot;ID&quot;:&quot;14&quot;,&quot;USER_FIELD_ID&quot;:&quot;75&quot;,&quot;VALUE&quot;:&quot;\u0424\u0438\u0437.\u043b\u0438\u0446\u043e&quot;,&quot;DEF&quot;:&quot;N&quot;,&quot;SORT&quot;:&quot;500&quot;,&quot;XML_ID&quot;:&quot;PHYSICAL&quot;}]"></add-company-popup>
+        <chat id="chat" ref="chat" :user-id="chatUserId" :order-id="chatOrderId" @close="onChatClosed()"></chat>
+
+        <popup-message ref="popupMessage" :key="message.id" id="popup-message" @close="message = ''">{{ message }}</popup-message>
+    </div>
+
+    
+
+</div>
+
+
+<!-- Yandex.Metrika counter -->
+<!-- /Yandex.Metrika counter -->
+
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'pull_server_enabled':'Y','pull_config_timestamp':'1631518834','pull_guest_mode':'N','pull_guest_user_id':'0'});(window.BX||top.BX).message({'PULL_OLD_REVISION':'Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script><script type="text/javascript" src="bitrix\js\main\core\core.js?1653599485478033"></script><script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','UTF_MODE':'Y','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1662562506','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'9ac89b652514286016d9e586b7d26230'});</script><script type="text/javascript" src="bitrix\js\pull\protobuf\protobuf.js?1618308485274055"></script>
+<script type="text/javascript" src="bitrix\js\pull\protobuf\model.js?161830848570928"></script>
+<script type="text/javascript" src="bitrix\js\main\core\core_promise.js?16183084825220"></script>
+<script type="text/javascript" src="bitrix\js\rest\client\rest.client.js?161830848417414"></script>
+<script type="text/javascript" src="bitrix\js\pull\client\pull.client.js?163925826870757"></script>
+<script type="text/javascript">BX.setJSList(['/local/templates/.default/dist/js/chunk-vendors.js','/local/templates/.default/dist/js/app.js']);</script>
+<script type="text/javascript">BX.setCSSList(['/local/templates/.default/dist/css/chunk-vendors.css','/local/templates/.default/dist/css/app.css','/local/templates/.default/css/styles.css','/local/templates/.default/css/edited_css.css']);</script>
+<script type="text/javascript">
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+
+
+
+<script type="text/javascript" src="bitrix\cache\js\s1\eurocappa\template_86204ee73e98a7eb577b10e458fbc12c\template_86204ee73e98a7eb577b10e458fbc12c_v1.js?16624602251941922"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "3c99e37c4fc971749e0799abbf65e49c"]); _ba.push(["host", "lk.eurokappa.pro"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<script>
+App.$store.dispatch('init', {"userData":[],"userType":"","userClinics":[],"clinicsAdmins":[],"clinicsDoctors":[],"managers":[{"ID":"2019","NAME":"\u0422\u0438\u043c\u0443\u0440","LAST_NAME":"\u0410\u0431\u0438\u0442\u043e\u0432","SECOND_NAME":"\u041d\u0430\u0440\u0438\u043c\u0430\u043d\u043e\u0432\u0438\u0447","EMAIL":"t.abitov@eurokappa.ru","PERSONAL_PHONE":""},{"ID":"2022","NAME":"\u0420\u0443\u0441\u043b\u0430\u043d","LAST_NAME":"\u0410\u043a\u0441\u0451\u043d\u043e\u0432","SECOND_NAME":"\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u0438\u0447","EMAIL":"r.aksenov@eurokappa.ru","PERSONAL_PHONE":""},{"ID":"1597","NAME":"\u042d\u043b\u044c\u0434\u0430\u0440","LAST_NAME":"\u0411\u0430\u0434\u0430\u0435\u0432","SECOND_NAME":"","EMAIL":"e.badaev@eurokappa.ru","PERSONAL_PHONE":"+7 (926) 539-49-75"},{"ID":"571","NAME":"\u0421\u0435\u0440\u0433\u0435\u0439","LAST_NAME":"\u0411\u0438\u0440\u044e\u043a\u043e\u0432","SECOND_NAME":"","EMAIL":"s.biryukov@eurokappa.ru","PERSONAL_PHONE":"+7 (929) 632-05-28"},{"ID":"1703","NAME":"\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430","LAST_NAME":"\u0414\u0451\u043c\u0438\u043d\u0430","SECOND_NAME":"","EMAIL":"a.dyomina@eurokappa.ru","PERSONAL_PHONE":"+7 (925) 407-95-46"},{"ID":"1421","NAME":"\u0412\u0430\u043b\u0435\u0440\u0438\u0439","LAST_NAME":"\u0414\u043e\u0432\u043d\u0430\u0440","SECOND_NAME":"\u0412\u0430\u043b\u0435\u0440\u044c\u0435\u0432\u0438\u0447","EMAIL":"v.dovnar@eurokappa.ru","PERSONAL_PHONE":"+7 (929) 515-62-24"},{"ID":"2027","NAME":"\u0418\u043b\u044c\u044f","LAST_NAME":"\u0416\u0435\u0440\u0435\u0431\u0446\u043e\u0432","SECOND_NAME":"","EMAIL":"i.zherebcov@eurokappa.ru","PERSONAL_PHONE":"+7 (926) 360-90-40"},{"ID":"2034","NAME":"\u0410\u043b\u0438\u043d\u0430","LAST_NAME":"\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0430","SECOND_NAME":"\u0420\u0430\u0448\u0438\u0442\u043e\u0432\u0430","EMAIL":"a.koroleva@eurokappa.ru","PERSONAL_PHONE":""},{"ID":"2002","NAME":"\u0415\u043b\u0435\u043d\u0430","LAST_NAME":"\u041a\u043e\u0441\u0435\u0446\u043a\u0430\u044f","SECOND_NAME":"","EMAIL":"e.kosetskaya@eurokappa.ru","PERSONAL_PHONE":""},{"ID":"1695","NAME":"\u0418\u043b\u044c\u044f","LAST_NAME":"\u041c\u0430\u0442\u044e\u0448\u0438\u043d","SECOND_NAME":"\u0421\u0435\u0440\u0433\u0435\u0435\u0432\u0438\u0447","EMAIL":"i.matyushin@eurokappa.ru","PERSONAL_PHONE":""},{"ID":"1586","NAME":"\u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430","LAST_NAME":"\u0420\u0435\u0432\u0430","SECOND_NAME":"\u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u043d\u0430","EMAIL":"e.reva@eurokappa.ru","PERSONAL_PHONE":""},{"ID":"1724","NAME":"\u0421\u0435\u0440\u0433\u0435\u0439","LAST_NAME":"\u0420\u043e\u043c\u0430\u043d\u043e\u0432","SECOND_NAME":"\u041c\u0438\u0445\u0430\u0439\u043b\u043e\u0432\u0438\u0447","EMAIL":"s.romanov@eurokappa.ru","PERSONAL_PHONE":"+7 (987) 432-74-31"},{"ID":"2012","NAME":"\u041c\u0430\u0440\u0438\u043d\u0430","LAST_NAME":"\u0421\u0430\u0432\u043e\u0441\u0442\u0438\u043d\u0430","SECOND_NAME":"\u0412\u0438\u043a\u0442\u043e\u0440\u043e\u0432\u043d\u0430","EMAIL":"m.savostina@eurokappa.ru","PERSONAL_PHONE":"+7 (911) 287-09-76"},{"ID":"1820","NAME":"\u041c\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430","LAST_NAME":"\u0421\u0430\u043c\u043e\u0439\u043b\u043e\u0432\u0430","SECOND_NAME":"","EMAIL":"m.samojlova@eurokappa.ru","PERSONAL_PHONE":""},{"ID":"1544","NAME":"\u0414\u043c\u0438\u0442\u0440\u0438\u0439","LAST_NAME":"\u0421\u0442\u0440\u0430\u0442\u0443\u043b\u0430","SECOND_NAME":"\u0418\u0433\u043e\u0440\u0435\u0432\u0438\u0447","EMAIL":"d.stratula@eurokappa.ru","PERSONAL_PHONE":"+7 (929) 515-56-89"},{"ID":"1648","NAME":"\u041c\u0430\u043a\u0441\u0438\u043c","LAST_NAME":"\u0422\u0438\u0442\u043e\u0432","SECOND_NAME":"\u0410\u043b\u0435\u043a\u0441\u0435\u0435\u0432\u0438\u0447","EMAIL":"m.titov@eurokappa.ru","PERSONAL_PHONE":""},{"ID":"2035","NAME":"\u0414\u0430\u043d\u0438\u0438\u043b","LAST_NAME":"\u0422\u043e\u043a\u0430\u0440\u0435\u0432","SECOND_NAME":"\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0438\u0447","EMAIL":"d.tokarev@eurokappa.ru","PERSONAL_PHONE":""},{"ID":"1916","NAME":"\u0411\u0435\u043a\u0441\u0443\u043b\u0442\u0430\u043d","LAST_NAME":"\u0422\u043e\u043b\u0435\u0433\u0435\u043d\u043e\u0432","SECOND_NAME":"","EMAIL":"b.tolegenov@eurokappa.ru","PERSONAL_PHONE":"+7 (777) 133-61-50"},{"ID":"672","NAME":"\u041e\u043b\u044c\u0433\u0430","LAST_NAME":"\u0423\u0441\u0442\u0438\u043d\u043e\u0432\u0430","SECOND_NAME":"\u0412\u0438\u043a\u0442\u043e\u0440\u043e\u0432\u043d\u0430","EMAIL":"o.ustinova@eurokappa.ru","PERSONAL_PHONE":""},{"ID":"1788","NAME":"\u0415\u0433\u043e\u0440","LAST_NAME":"\u0426\u0430\u0440\u0435\u0433\u043e\u0440\u043e\u0434\u0446\u0435\u0432","SECOND_NAME":"","EMAIL":"e.care@eurokappa.ru","PERSONAL_PHONE":"+7 (925) 555-96-97"},{"ID":"1701","NAME":"\u042f\u043d\u0430","LAST_NAME":"\u0426\u0443\u0446\u043a\u043e\u0432\u0430","SECOND_NAME":"\u0418\u0433\u043e\u0440\u0435\u0432\u043d\u0430","EMAIL":"y.cuckova@eurokappa.ru","PERSONAL_PHONE":"+7 (925) 761-49-43"}],"usersGroups":[{"ID":"1","NAME":"\u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u044b"},{"ID":"2","NAME":"\u0412\u0441\u0435 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0438 (\u0432 \u0442\u043e\u043c \u0447\u0438\u0441\u043b\u0435 \u043d\u0435\u0430\u0432\u0442\u043e\u0440\u0438\u0437\u043e\u0432\u0430\u043d\u043d\u044b\u0435)"},{"ID":"8","NAME":"\u0412\u0440\u0430\u0447"},{"ID":"9","NAME":"\u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440 \u043a\u043b\u0438\u043d\u0438\u043a\u0438"},{"ID":"10","NAME":"\u041e\u0440\u0442\u043e\u0434\u043e\u043d\u0442-\u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433"},{"ID":"11","NAME":"\u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440 \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u0438\u0438"},{"ID":"12","NAME":"\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440"},{"ID":"13","NAME":"\u0421\u0442\u0430\u0440\u0448\u0438\u0439 \u043e\u0440\u0442\u043e\u0434\u043e\u043d\u0442-\u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433"},{"ID":"14","NAME":"\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440 \u043f\u043e \u0441\u043e\u043f\u0440\u043e\u0432\u043e\u0436\u0434\u0435\u043d\u0438\u044e"},{"ID":"15","NAME":"\u041c\u0430\u0440\u043a\u0435\u0442\u043e\u043b\u043e\u0433"},{"ID":"16","NAME":"\u0414\u0438\u0441\u0442\u0440\u0438\u0431\u044c\u044e\u0442\u043e\u0440\u044b"},{"ID":"17","NAME":"3D-\u0422\u0435\u0445\u043d\u0438\u043a"},{"ID":"18","NAME":"\u041f\u0435\u0440\u0435\u0432\u043e\u0434\u0447\u0438\u043a"},{"ID":"19","NAME":"\u041b\u043e\u0433\u0438\u0441\u0442\u0438\u043a\u0430"},{"ID":"20","NAME":"\u0422\u0435\u043b\u0435\u043c\u0430\u0440\u043a\u0435\u0442\u043e\u043b\u043e\u0433 (\u043d\u0435 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u043e)"},{"ID":"21","NAME":"\u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440 \u041b\u041a"},{"ID":"22","NAME":"\u041a\u043e\u043d\u0442\u0435\u043d\u0442-\u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440\u044b"}],"notifiedSections":["news","events","education-video","education","education","education-ref_info"],"defaultFormUser":false,"recaptchaSiteKey":"6Lf7zNkZAAAAAOkdnnKu_5Q_zXhfg-Rs53QbQgpN"});
+
+let nav = $('#header-static thead');
+if (nav.length) {
+    let elementPosition = nav.offset();
+    $(window).scroll(function() {
+        if (($(window).scrollTop() + 50) > elementPosition.top) {
+            $('#header-static thead th').each(function(index) {
+                if ($(this).attr('h_width')) {
+                    $(this).width($(this).attr('h_width'));
+                } else {
+                    let header_width = $(this).width();
+                    $(this).attr('h_width', header_width);
+                }
+            });
+
+            $('#header-static tbody tr:first-child td').each(function(index) {
+                let header_width = $(this).width();
+                $(this).width(header_width);
+            });
+
+            nav.addClass('attached');
+            nav.css('position','fixed').css('top','0').css('display', 'table').css('z-index', 100).css('width','calc(100% - 61px)').css('font-size','14px').css('line-height','20px');
+        } else {
+            nav.removeClass('attached');
+            nav.css('position','static').css('top','auto').css('z-index', 'auto').css('display', 'table-header-group');
+        }
+    });
+}
+</script></body>
+</html>

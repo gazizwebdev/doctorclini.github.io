@@ -1,0 +1,420 @@
+Uri: https://lk.eurokappa.pro/
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\index.htm
+Content Type: text/html
+
+Uri: https://lk.eurokappa.pro/bitrix/cache/css/s1/eurocappa/template_788cfcee8136ee325e44b7df19c57e88/template_788cfcee8136ee325e44b7df19c57e88_v1.css?1662460225961448
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\bitrix\cache\css\s1\eurocappa\template_788cfcee8136ee325e44b7df19c57e88\template_788cfcee8136ee325e44b7df19c57e88_v1.css
+Content Type: text/css
+
+Uri: https://lk.eurokappa.pro/bitrix/cache/js/s1/eurocappa/template_86204ee73e98a7eb577b10e458fbc12c/template_86204ee73e98a7eb577b10e458fbc12c_v1.js?16624602251941922
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\bitrix\cache\js\s1\eurocappa\template_86204ee73e98a7eb577b10e458fbc12c\template_86204ee73e98a7eb577b10e458fbc12c_v1.js
+Content Type: application/javascript
+
+Uri: https://lk.eurokappa.pro/bitrix/js/main/core/core.js?1653599485478033
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\bitrix\js\main\core\core.js
+Content Type: application/javascript
+
+Uri: https://lk.eurokappa.pro/bitrix/js/main/core/core_promise.js?16183084825220
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\bitrix\js\main\core\core_promise.js
+Content Type: application/javascript
+
+Uri: https://lk.eurokappa.pro/bitrix/js/pull/client/pull.client.js?163925826870757
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\bitrix\js\pull\client\pull.client.js
+Content Type: application/javascript
+
+Uri: https://lk.eurokappa.pro/bitrix/js/pull/protobuf/model.js?161830848570928
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\bitrix\js\pull\protobuf\model.js
+Content Type: application/javascript
+
+Uri: https://lk.eurokappa.pro/bitrix/js/pull/protobuf/protobuf.js?1618308485274055
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\bitrix\js\pull\protobuf\protobuf.js
+Content Type: application/javascript
+
+Uri: https://lk.eurokappa.pro/bitrix/js/rest/client/rest.client.js?161830848417414
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\bitrix\js\rest\client\rest.client.js
+Content Type: application/javascript
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-brands-400.eot
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-brands-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-brands-400.eot?
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-brands-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-brands-400.ttf
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-brands-400.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-brands-400.woff
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-brands-400.woff
+Content Type: font/woff
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-brands-400.woff2
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-brands-400.woff2
+Content Type: font/woff2
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-regular-400.eot
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-regular-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-regular-400.eot?
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-regular-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-regular-400.ttf
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-regular-400.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-regular-400.woff
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-regular-400.woff
+Content Type: font/woff
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-regular-400.woff2
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-regular-400.woff2
+Content Type: font/woff2
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-solid-900.eot
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-solid-900.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-solid-900.eot?
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-solid-900-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-solid-900.ttf
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-solid-900.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-solid-900.woff
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-solid-900.woff
+Content Type: font/woff
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/fa-solid-900.woff2
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\fa-solid-900.woff2
+Content Type: font/woff2
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/materialdesignicons-webfont.eot
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\materialdesignicons-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/materialdesignicons-webfont.eot?
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\materialdesignicons-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/materialdesignicons-webfont.ttf
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\materialdesignicons-webfont.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/materialdesignicons-webfont.woff
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\materialdesignicons-webfont.woff
+Content Type: font/woff
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/fonts/materialdesignicons-webfont.woff2
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\fonts\materialdesignicons-webfont.woff2
+Content Type: font/woff2
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/img/fa-brands-400.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\img\fa-brands-400.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/img/fa-regular-400.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\img\fa-regular-400.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/dist/img/fa-solid-900.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\dist\img\fa-solid-900.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/img/apple_store.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\img\apple_store.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/img/auth-bg.png
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\img\auth-bg.png
+Content Type: image/png
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/img/google_app.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\img\google_app.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/img/icon-3d.png
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\img\icon-3d.png
+Content Type: image/png
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/img/logo.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\img\logo.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/img/screenshot.png
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\img\screenshot.png
+Content Type: image/png
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/add-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\add-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/arrow-back.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\arrow-back.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/arrow-down.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\arrow-down.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/btn-chat-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\btn-chat-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/chat-close-mobile.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\chat-close-mobile.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/chat-icon-white.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\chat-icon-white.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/chat-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\chat-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/check-icon-circle.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\check-icon-circle.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/checkbox-checked.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\checkbox-checked.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/checkbox.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\checkbox.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/cross-blue-circle.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\cross-blue-circle.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/cross-blue.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\cross-blue.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/dev-bg.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\dev-bg.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/dev-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\dev-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/diagnose-sagittal.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\diagnose-sagittal.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/diagnose-transversal.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\diagnose-transversal.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/diagnose-vertical.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\diagnose-vertical.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/doc-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\doc-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/dots-vertical.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\dots-vertical.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/file-plus.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\file-plus.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/file-preview-default.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\file-preview-default.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/icon-circle-minus.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\icon-circle-minus.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/icon-circle-plus.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\icon-circle-plus.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/icon-close-big.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\icon-close-big.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/icon-sound-off.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\icon-sound-off.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/icon-sound-on.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\icon-sound-on.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/mark-success.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\mark-success.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-clinics-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-clinics-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-clinics-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-clinics-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-distributors-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-distributors-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-distributors-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-distributors-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-doctors-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-doctors-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-doctors-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-doctors-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-education-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-education-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-education-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-education-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-events-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-events-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-events-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-events-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-logout-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-logout-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-logout-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-logout-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-news-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-news-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-news-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-news-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-orders-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-orders-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-orders-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-orders-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-orders-retainers-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-orders-retainers-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-orders-retainers-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-orders-retainers-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-orders-revisions-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-orders-revisions-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-orders-revisions-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-orders-revisions-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-patients-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-patients-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-patients-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-patients-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-reports-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-reports-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-reports-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-reports-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-shipment-icon-active.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-shipment-icon-active.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/menu-shipment-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\menu-shipment-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/onload.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\onload.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/radio-checked.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\radio-checked.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/radio.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\radio.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/red-cross-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\red-cross-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/remove-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\remove-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/search-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\search-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/send-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\send-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/sidebar-close-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\sidebar-close-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/sidebar-open-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\sidebar-open-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/success-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\success-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/wait-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\wait-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/web-right.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\web-right.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/web.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\web.svg
+Content Type: image/svg+xml
+
+Uri: https://lk.eurokappa.pro/local/templates/.default/svg/xls-icon.svg
+File Name: c:\Downloaded Web Sites\lk.eurokappa.pro\local\templates\.default\svg\xls-icon.svg
+Content Type: image/svg+xml
+
